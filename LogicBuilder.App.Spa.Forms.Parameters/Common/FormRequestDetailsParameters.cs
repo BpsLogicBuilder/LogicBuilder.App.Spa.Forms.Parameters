@@ -40,13 +40,13 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     )
 #pragma warning restore S107
     {
-        public string GetUrl { get; set; } = getUrl;
-        public string AddUrl { get; set; } = addUrl;
-        public string UpdateUrl { get; set; } = updateUrl;
-        public string DeleteUrl { get; set; } = deleteUrl;
-        public string ModelType { get; set; } = modelType;
-        public string DataType { get; set; } = dataType;
-        public FilterLambdaOperatorParameters? Filter { get; set; } = filter;
-        public SelectExpandDefinitionParameters? SelectExpandDefinition { get; set; } = selectExpandDefinition;
+        public string GetUrl { get; } = getUrl;
+        public string AddUrl { get; } = addUrl;
+        public string UpdateUrl { get; } = updateUrl;
+        public string DeleteUrl { get; } = deleteUrl;
+        public string ModelType { get; } = modelType;
+        public string DataType { get; } = dataType;
+        public FilterLambdaOperatorParameters? Filter { get; } = filter;
+        public SelectExpandDefinitionParameters? SelectExpandDefinition { get; } = selectExpandDefinition;
     }
 }

@@ -7,7 +7,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
             [ParameterEditorControl(ParameterControlType.DropDown)]
             string aggregateFunction)
     {
-        public string Label { get; set; } = label;
-        public string Function { get; set; } = aggregateFunction;
+        public string Label { get; } = label;
+        public string Function { get; } = aggregateFunction;
     }
 }

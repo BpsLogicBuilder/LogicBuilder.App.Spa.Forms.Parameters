@@ -11,7 +11,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<ValidatorDescriptionParameters>? validators = null
     )
     {
-        public object? DefaultValue { get; set; } = defaultValue;
-        public List<ValidatorDescriptionParameters>? Validators { get; set; } = validators ?? [];
+        public object? DefaultValue { get; } = defaultValue;
+        public List<ValidatorDescriptionParameters>? Validators { get; } = validators ?? [];
     }
 }

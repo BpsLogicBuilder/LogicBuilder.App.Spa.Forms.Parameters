@@ -26,10 +26,10 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     ) : IDetailItemParameters
     {
         public DetailItemType DetailType => DetailItemType.List;
-        public string Field { get; set; } = field;
-        public string Title { get; set; } = title;
-        public DetailListTemplateParameters ListTemplate { get; set; } = listTemplate;
-        public List<IDetailItemParameters> FieldSettings { get; set; } = fieldSettings;
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public string Title { get; } = title;
+        public DetailListTemplateParameters ListTemplate { get; } = listTemplate;
+        public List<IDetailItemParameters> FieldSettings { get; } = fieldSettings;
+        public string? ModelType { get; } = modelType;
     }
 }

@@ -23,11 +23,11 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<AggregateDefinitionParameters>? aggregates = null
     )
     {
-        public int? Skip { get; set; } = skip;
-        public int? Take { get; set; } = take;
-        public List<SortParameters>? Sort { get; set; } = sort;
-        public List<GroupParameters>? Group { get; set; } = group;
-        public FilterGroupParameters? FilterGroup { get; set; } = filterGroup;
-        public List<AggregateDefinitionParameters>? Aggregates { get; set; } = aggregates;
+        public int? Skip { get; } = skip;
+        public int? Take { get; } = take;
+        public List<SortParameters>? Sort { get; } = sort;
+        public List<GroupParameters>? Group { get; } = group;
+        public FilterGroupParameters? FilterGroup { get; } = filterGroup;
+        public List<AggregateDefinitionParameters>? Aggregates { get; } = aggregates;
     }
 }

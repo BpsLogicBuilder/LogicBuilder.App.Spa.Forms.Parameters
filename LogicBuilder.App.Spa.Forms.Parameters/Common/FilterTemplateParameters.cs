@@ -29,12 +29,12 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = null
     )
     {
-        public string TemplateName { get; set; } = templateName;
-        public bool IsPrimitive { get; set; } = isPrimitive;
-        public string TextField { get; set; } = textField;
-        public string ValueField { get; set; } = valueField;
-        public SelectorLambdaOperatorParameters TextAndValueSelector { get; set; } = textAndValueSelector;
-        public RequestDetailsParameters RequestDetails { get; set; } = requestDetails;
-        public string? ModelType { get; set; } = modelType;
+        public string TemplateName { get; } = templateName;
+        public bool IsPrimitive { get; } = isPrimitive;
+        public string TextField { get; } = textField;
+        public string ValueField { get; } = valueField;
+        public SelectorLambdaOperatorParameters TextAndValueSelector { get; } = textAndValueSelector;
+        public RequestDetailsParameters RequestDetails { get; } = requestDetails;
+        public string? ModelType { get; } = modelType;
     }
 }

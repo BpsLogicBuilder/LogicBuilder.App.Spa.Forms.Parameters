@@ -30,11 +30,11 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         SelectExpandDefinitionParameters? selectExpandDefinition = null
     )
     {
-        public string ModelType { get; set; } = modelType;
-        public string DataType { get; set; } = dataType;
-        public string ModelReturnType { get; set; } = modelReturnType;
-        public string DataReturnType { get; set; } = dataReturnType;
-        public string DataSourceUrl { get; set; } = dataSourceUrl;
-        public SelectExpandDefinitionParameters? SelectExpandDefinition { get; set; } = selectExpandDefinition;
+        public string ModelType { get; } = modelType;
+        public string DataType { get; } = dataType;
+        public string ModelReturnType { get; } = modelReturnType;
+        public string DataReturnType { get; } = dataReturnType;
+        public string DataSourceUrl { get; } = dataSourceUrl;
+        public SelectExpandDefinitionParameters? SelectExpandDefinition { get; } = selectExpandDefinition;
     }
 }

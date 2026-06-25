@@ -8,6 +8,6 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string templateName
     )
     {
-        public string TemplateName { get; set; } = templateName;
+        public string TemplateName { get; } = templateName;
     }
 }

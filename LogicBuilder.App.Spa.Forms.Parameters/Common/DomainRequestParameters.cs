@@ -10,7 +10,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
             RequestDetailsParameters requestDetails
         )
     {
-        public DataRequestStateParameters State { get; set; } = state;
-        public RequestDetailsParameters RequestDetails { get; set; } = requestDetails;
+        public DataRequestStateParameters State { get; } = state;
+        public RequestDetailsParameters RequestDetails { get; } = requestDetails;
     }
 }

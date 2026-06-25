@@ -22,8 +22,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
             string? modelType = null
         )
     {
-        public string Field { get; set; } = field;
-        public List<DirectiveParameters> ConditionalDirectives { get; set; } = conditionalDirectives;
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public List<DirectiveParameters> ConditionalDirectives { get; } = conditionalDirectives;
+        public string? ModelType { get; } = modelType;
     }
 }

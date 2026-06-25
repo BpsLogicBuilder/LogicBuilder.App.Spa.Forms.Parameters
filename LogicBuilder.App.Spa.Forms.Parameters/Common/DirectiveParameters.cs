@@ -10,7 +10,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         ConditionGroupParameters conditionGroup
     )
     {
-        public DirectiveDescriptionParameters DirectiveDescription { get; set; } = directiveDescription;
-        public ConditionGroupParameters ConditionGroup { get; set; } = conditionGroup;
+        public DirectiveDescriptionParameters DirectiveDescription { get; } = directiveDescription;
+        public ConditionGroupParameters ConditionGroup { get; } = conditionGroup;
     }
 }

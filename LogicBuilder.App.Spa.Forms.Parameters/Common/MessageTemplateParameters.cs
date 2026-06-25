@@ -16,8 +16,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
             string templateName
         )
     {
-        public string Caption { get; set; } = caption;
-        public string Message { get; set; } = message;
-        public string TemplateName { get; set; } = templateName;
+        public string Caption { get; } = caption;
+        public string Message { get; } = message;
+        public string TemplateName { get; } = templateName;
     }
 }

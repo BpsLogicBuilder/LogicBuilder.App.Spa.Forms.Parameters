@@ -27,11 +27,11 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = null
     )
     {
-        public string Field { get; set; } = field;
-        public string Operator { get; set; } = oper;
-        public object? Value { get; set; } = value;
-        public bool? IgnoreCase { get; set; } = ignoreCase;
-        public string ValueSourceMember { get; set; } = valueSourceMember;
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public string Operator { get; } = oper;
+        public object? Value { get; } = value;
+        public bool? IgnoreCase { get; } = ignoreCase;
+        public string ValueSourceMember { get; } = valueSourceMember;
+        public string? ModelType { get; } = modelType;
     }
 }

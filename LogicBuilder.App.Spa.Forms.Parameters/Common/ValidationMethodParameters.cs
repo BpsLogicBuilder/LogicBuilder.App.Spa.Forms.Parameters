@@ -12,7 +12,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string message
     )
     {
-        public string Method { get; set; } = method;
-        public string Message { get; set; } = message;
+        public string Method { get; } = method;
+        public string Message { get; } = message;
     }
 }

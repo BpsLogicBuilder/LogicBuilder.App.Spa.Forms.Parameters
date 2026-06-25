@@ -31,15 +31,15 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string modelType = "Contoso.Domain.Entities.XXXX , Contoso.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     )
     {
-        public string Title { get; set; } = title;
-        public string DisplayField { get; set; } = displayField;
-        public FormRequestDetailsParameters RequestDetails { get; set; } = requestDetails;
-        public Dictionary<string, Dictionary<string, string>> ValidationMessages { get; set; } = validationMessages.ToDictionary(kvp => kvp.Field, kvp => kvp.Methods);
-        public List<IFormItemSettingParameters> FieldSettings { get; set; } = fieldSettings;
-        public Dictionary<string, List<DirectiveParameters>> ConditionalDirectives { get; set; } = conditionalDirectives?.Select
+        public string Title { get; } = title;
+        public string DisplayField { get; } = displayField;
+        public FormRequestDetailsParameters RequestDetails { get; } = requestDetails;
+        public Dictionary<string, Dictionary<string, string>> ValidationMessages { get; } = validationMessages.ToDictionary(kvp => kvp.Field, kvp => kvp.Methods);
+        public List<IFormItemSettingParameters> FieldSettings { get; } = fieldSettings;
+        public Dictionary<string, List<DirectiveParameters>> ConditionalDirectives { get; } = conditionalDirectives?.Select
             (
                 cd => new VariableDirectivesParameters(cd.Field.Replace('.', '_'), cd.ConditionalDirectives)
             ).ToDictionary(kvp => kvp.Field, kvp => kvp.ConditionalDirectives) ?? [];
-        public string ModelType { get; set; } = modelType;
+        public string ModelType { get; } = modelType;
     }
 }

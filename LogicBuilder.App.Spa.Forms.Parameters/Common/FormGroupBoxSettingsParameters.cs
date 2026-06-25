@@ -18,9 +18,9 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     ) : IFormItemSettingParameters
     {
         public AbstractControlType AbstractControlType => AbstractControlType.GroupBox;
-        public FormGroupTemplateParameters FormGroupTemplate { get; set; } = formGroupTemplate;
-        public List<IFormItemSettingParameters> FieldSettings { get; set; } = fieldSettings;
-        public string Title { get; set; } = title;
-        public bool ShowTitle { get; set; } = showTitle;
+        public FormGroupTemplateParameters FormGroupTemplate { get; } = formGroupTemplate;
+        public List<IFormItemSettingParameters> FieldSettings { get; } = fieldSettings;
+        public string Title { get; } = title;
+        public bool ShowTitle { get; } = showTitle;
     }
 }
