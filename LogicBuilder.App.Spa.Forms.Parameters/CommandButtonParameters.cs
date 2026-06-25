@@ -25,10 +25,10 @@ namespace LogicBuilder.App.Spa.Forms.Parameters
             string classString = "btn btn-secondary"
         )
     {
-        public bool Cancel { get; set; } = cancel;
-        public int? GridId { get; set; } = gridId;
-        public bool? GridCommandButton { get; set; } = gridCommandButton;
-        public string ButtonIcon { get; set; } = buttonIcon;
-        public string ClassString { get; set; } = classString;
+        public bool Cancel { get; } = cancel;
+        public int? GridId { get; } = gridId;
+        public bool? GridCommandButton { get; } = gridCommandButton;
+        public string ButtonIcon { get; } = buttonIcon;
+        public string ClassString { get; } = classString;
     }
 }

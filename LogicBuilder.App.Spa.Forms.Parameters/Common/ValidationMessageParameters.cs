@@ -19,8 +19,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = null
     )
     {
-        public string Field { get; set; } = field;
-        public Dictionary<string, string> Methods { get; set; } = methods.ToDictionary(kvp => kvp.Method, kvp => kvp.Message);
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public Dictionary<string, string> Methods { get; } = methods.ToDictionary(kvp => kvp.Method, kvp => kvp.Message);
+        public string? ModelType { get; } = modelType;
     }
 }

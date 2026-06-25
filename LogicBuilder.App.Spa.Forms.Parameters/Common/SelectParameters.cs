@@ -17,8 +17,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = null
     )
     {
-        public string FieldName { get; set; } = fieldName;
-        public string SourceMember { get; set; } = sourceMember;
-        public string? ModelType { get; set; } = modelType;
+        public string FieldName { get; } = fieldName;
+        public string SourceMember { get; } = sourceMember;
+        public string? ModelType { get; } = modelType;
     }
 }

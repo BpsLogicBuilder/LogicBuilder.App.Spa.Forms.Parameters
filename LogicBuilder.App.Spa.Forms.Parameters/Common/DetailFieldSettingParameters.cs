@@ -30,11 +30,11 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     ) : IDetailItemParameters
     {
         public DetailItemType DetailType => DetailItemType.Field;
-        public string Field { get; set; } = field;
-        public string Title { get; set; } = title;
-        public string Type { get; set; } = type;
-        public string ModelType { get; set; } = modelType;
-        public DetailFieldTemplateParameters? FieldTemplate { get; set; } = fieldTemplate;
-        public DetailDropDownTemplateParameters? ValueTextTemplate { get; set; } = valueTextTemplate;
+        public string Field { get; } = field;
+        public string Title { get; } = title;
+        public string Type { get; } = type;
+        public string ModelType { get; } = modelType;
+        public DetailFieldTemplateParameters? FieldTemplate { get; } = fieldTemplate;
+        public DetailDropDownTemplateParameters? ValueTextTemplate { get; } = valueTextTemplate;
     }
 }

@@ -18,8 +18,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = null
     )
     {
-        public string Field { get; set; } = field;
-        public string Dir { get; set; } = dir;
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public string Dir { get; } = dir;
+        public string? ModelType { get; } = modelType;
     }
 }

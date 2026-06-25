@@ -16,8 +16,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
             string? modelType = "<myApp>.Domain.Entities.<EntityName>"
         )
     {
-        public string TemplateName { get; set; } = templateName;
-        public string DisplayMember { get; set; } = displayMember;
-        public string? ModelType { get; set; } = modelType;
+        public string TemplateName { get; } = templateName;
+        public string DisplayMember { get; } = displayMember;
+        public string? ModelType { get; } = modelType;
     }
 }

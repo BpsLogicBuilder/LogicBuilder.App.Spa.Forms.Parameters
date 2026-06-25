@@ -10,7 +10,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         MessageTemplateParameters? messageTemplate = null
     )
     {
-        public ContentTemplateParameters? ContentTemplate { get; set; } = contentTemplate;
-        public MessageTemplateParameters? MessageTemplate { get; set; } = messageTemplate;
+        public ContentTemplateParameters? ContentTemplate { get; } = contentTemplate;
+        public MessageTemplateParameters? MessageTemplate { get; } = messageTemplate;
     }
 }

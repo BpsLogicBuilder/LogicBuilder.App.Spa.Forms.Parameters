@@ -12,8 +12,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<FilterGroupParameters>? filterGroups = null
     )
     {
-        public string Logic { get; set; } = logic;
-        public List<FilterDefinitionParameters>? Filters { get; set; } = filters;
-        public List<FilterGroupParameters>? FilterGroups { get; set; } = filterGroups;
+        public string Logic { get; } = logic;
+        public List<FilterDefinitionParameters>? Filters { get; } = filters;
+        public List<FilterGroupParameters>? FilterGroups { get; } = filterGroups;
     }
 }

@@ -28,10 +28,10 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 
         )
     {
-        public string Operator { get; set; } = @operator;
-        public string LeftVariable { get; set; } = leftVariable;
-        public string? RightVariable { get; set; } = rightVariable;
-        public object? Value { get; set; } = value;
-        public string? ModelType { get; set; } = modelType;
+        public string Operator { get; } = @operator;
+        public string LeftVariable { get; } = leftVariable;
+        public string? RightVariable { get; } = rightVariable;
+        public object? Value { get; } = value;
+        public string? ModelType { get; } = modelType;
     }
 }

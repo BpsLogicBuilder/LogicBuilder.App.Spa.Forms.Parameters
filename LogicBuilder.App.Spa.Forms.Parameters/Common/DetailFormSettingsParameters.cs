@@ -24,10 +24,10 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         string? modelType = "<myApp>.Domain.Entities.<EntityName>"
     )
     {
-        public string Title { get; set; } = title;
-        public string DisplayField { get; set; } = displayField;
-        public FormRequestDetailsParameters RequestDetails { get; set; } = requestDetails;
-        public List<IDetailItemParameters> FieldSettings { get; set; } = fieldSettings;
-        public string? ModelType { get; set; } = modelType;
+        public string Title { get; } = title;
+        public string DisplayField { get; } = displayField;
+        public FormRequestDetailsParameters RequestDetails { get; } = requestDetails;
+        public List<IDetailItemParameters> FieldSettings { get; } = fieldSettings;
+        public string? ModelType { get; } = modelType;
     }
 }

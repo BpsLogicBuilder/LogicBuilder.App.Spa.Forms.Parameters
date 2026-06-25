@@ -38,16 +38,16 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 #pragma warning restore S107
     {
         public AbstractControlType AbstractControlType => AbstractControlType.FormGroup;
-        public string Field { get; set; } = field;
-        public FormGroupTemplateParameters FormGroupTemplate { get; set; } = formGroupTemplate;
-        public List<IFormItemSettingParameters> FieldSettings { get; set; } = fieldSettings;
-        public Dictionary<string, Dictionary<string, string>> ValidationMessages { get; set; } = validationMessages.ToDictionary(kvp => kvp.Field, kvp => kvp.Methods);
-        public Dictionary<string, List<DirectiveParameters>> ConditionalDirectives { get; set; } = conditionalDirectives?.Select
+        public string Field { get; } = field;
+        public FormGroupTemplateParameters FormGroupTemplate { get; } = formGroupTemplate;
+        public List<IFormItemSettingParameters> FieldSettings { get; } = fieldSettings;
+        public Dictionary<string, Dictionary<string, string>> ValidationMessages { get; } = validationMessages.ToDictionary(kvp => kvp.Field, kvp => kvp.Methods);
+        public Dictionary<string, List<DirectiveParameters>> ConditionalDirectives { get; } = conditionalDirectives?.Select
         (
             cd => new VariableDirectivesParameters(cd.Field.Replace('.', '_'), cd.ConditionalDirectives)
         ).ToDictionary(kvp => kvp.Field, kvp => kvp.ConditionalDirectives) ?? [];
-        public string Title { get; set; } = title;
-        public bool ShowTitle { get; set; } = showTitle;
-        public string ModelType { get; set; } = modelType;
+        public string Title { get; } = title;
+        public bool ShowTitle { get; } = showTitle;
+        public string ModelType { get; } = modelType;
     }
 }

@@ -10,7 +10,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         int? width
     )
     {
-        public string Title { get; set; } = title;
-        public int? Width { get; set; } = width;
+        public string Title { get; } = title;
+        public int? Width { get; } = width;
     }
 }

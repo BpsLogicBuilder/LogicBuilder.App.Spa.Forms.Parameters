@@ -19,9 +19,9 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<IDetailItemParameters> fieldSettings
     )
     {
-        public string Title { get; set; } = title;
-        public RequestDetailsParameters RequestDetails { get; set; } = requestDetails;
-        public SelectorLambdaOperatorParameters FieldsSelector { get; set; } = fieldsSelector;
-        public List<IDetailItemParameters> FieldSettings { get; set; } = fieldSettings;
+        public string Title { get; } = title;
+        public RequestDetailsParameters RequestDetails { get; } = requestDetails;
+        public SelectorLambdaOperatorParameters FieldsSelector { get; } = fieldsSelector;
+        public List<IDetailItemParameters> FieldSettings { get; } = fieldSettings;
     }
 }

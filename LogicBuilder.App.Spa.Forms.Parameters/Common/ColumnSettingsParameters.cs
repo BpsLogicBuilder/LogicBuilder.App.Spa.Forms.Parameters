@@ -54,20 +54,20 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     )
 #pragma warning restore S107
     {
-        public string Field { get; set; } = field;
-        public string Title { get; set; } = title;
-        public string Type { get; set; } = type;
-        public bool? Groupable { get; set; } = groupable;
-        public int? Width { get; set; } = width;
-        public string? Format { get; set; } = format;
-        public string? Filter { get; set; } = filter;
-        public CellTemplateParameters? CellTemplate { get; set; } = cellTemplate;
-        public CellListTemplateParameters? CellListTemplate { get; set; } = cellListTemplate;
-        public FilterTemplateParameters? FilterRowTemplate { get; set; } = filterRowTemplate;
-        public FilterTemplateParameters? FilterMenuTemplate { get; set; } = filterMenuTemplate;
-        public AggregateTemplateParameters? GroupHeaderTemplate { get; set; } = groupHeaderTemplate;
-        public AggregateTemplateParameters? GroupFooterTemplate { get; set; } = groupFooterTemplate;
-        public AggregateTemplateParameters? GridFooterTemplate { get; set; } = gridFooterTemplate;
-        public string? ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public string Title { get; } = title;
+        public string Type { get; } = type;
+        public bool? Groupable { get; } = groupable;
+        public int? Width { get; } = width;
+        public string? Format { get; } = format;
+        public string? Filter { get; } = filter;
+        public CellTemplateParameters? CellTemplate { get; } = cellTemplate;
+        public CellListTemplateParameters? CellListTemplate { get; } = cellListTemplate;
+        public FilterTemplateParameters? FilterRowTemplate { get; } = filterRowTemplate;
+        public FilterTemplateParameters? FilterMenuTemplate { get; } = filterMenuTemplate;
+        public AggregateTemplateParameters? GroupHeaderTemplate { get; } = groupHeaderTemplate;
+        public AggregateTemplateParameters? GroupFooterTemplate { get; } = groupFooterTemplate;
+        public AggregateTemplateParameters? GridFooterTemplate { get; } = gridFooterTemplate;
+        public string? ModelType { get; } = modelType;
     }
 }

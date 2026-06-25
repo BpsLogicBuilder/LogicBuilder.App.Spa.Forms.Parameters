@@ -18,8 +18,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<DirectiveArgumentParameters>? arguments = null
     )
     {
-        public string ClassName { get; set; } = className;
-        public string FunctionName { get; set; } = functionName;
-        public Dictionary<string, object>? Arguments { get; set; } = arguments?.ToDictionary(kvp => kvp.Name, kvp => kvp.Value);
+        public string ClassName { get; } = className;
+        public string FunctionName { get; } = functionName;
+        public Dictionary<string, object>? Arguments { get; } = arguments?.ToDictionary(kvp => kvp.Name, kvp => kvp.Value);
     }
 }

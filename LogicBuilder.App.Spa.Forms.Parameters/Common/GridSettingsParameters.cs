@@ -62,23 +62,23 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
     )
 #pragma warning restore S107
     {
-        public string Title { get; set; } = title;
-        public bool Sortable { get; set; } = sortable;
-        public bool Pageable { get; set; } = pageable;
-        public string Scrollable { get; set; } = scrollable;
-        public bool Groupable { get; set; } = groupable;
-        public bool IsFilterable { get; set; } = isFilterable;
-        public string FilterableType { get; set; } = filterableType;
+        public string Title { get; } = title;
+        public bool Sortable { get; } = sortable;
+        public bool Pageable { get; } = pageable;
+        public string Scrollable { get; } = scrollable;
+        public bool Groupable { get; } = groupable;
+        public bool IsFilterable { get; } = isFilterable;
+        public string FilterableType { get; } = filterableType;
         public dynamic Filterable => string.IsNullOrEmpty(FilterableType)
                                         ? (object)IsFilterable
                                         : FilterableType;
-        public List<ColumnSettingsParameters> Columns { get; set; } = columns;
-        public int? GridId { get; set; } = gridId;
-        public int? Height { get; set; } = height;
-        public CommandColumnParameters? CommandColumn { get; set; } = commandColumn;
-        public DataRequestStateParameters? State { get; set; } = state;
-        public List<AggregateDefinitionParameters>? Aggregates { get; set; } = aggregates;
-        public GridRequestDetailsParameters? RequestDetails { get; set; } = requestDetails;
-        public GridSettingsParameters? DetailGridSettings { get; set; } = detailGridSettings;
+        public List<ColumnSettingsParameters> Columns { get; } = columns;
+        public int? GridId { get; } = gridId;
+        public int? Height { get; } = height;
+        public CommandColumnParameters? CommandColumn { get; } = commandColumn;
+        public DataRequestStateParameters? State { get; } = state;
+        public List<AggregateDefinitionParameters>? Aggregates { get; } = aggregates;
+        public GridRequestDetailsParameters? RequestDetails { get; } = requestDetails;
+        public GridSettingsParameters? DetailGridSettings { get; } = detailGridSettings;
     }
 }

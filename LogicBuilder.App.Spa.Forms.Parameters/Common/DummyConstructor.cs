@@ -2,6 +2,7 @@
 {
 #pragma warning disable S107 //Constructor used as metadata for configuring multiple parameters in one go.
 #pragma warning disable CS9113 //Constructor used as metadata for configuring multiple parameters in one go.
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
     public class DummyConstructor(
         CommandButtonParameters commandButtonData,
         DetailFormSettingsParameters form,

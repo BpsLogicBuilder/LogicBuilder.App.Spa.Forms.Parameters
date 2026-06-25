@@ -40,13 +40,13 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 #pragma warning restore S107
     {
         public AbstractControlType AbstractControlType => AbstractControlType.DropdownSelectorControl;
-        public string Field { get; set; } = field;
-        public string DomElementId { get; set; } = domElementId;
-        public string Title { get; set; } = title;
-        public string Placeholder { get; set; } = placeHolder;
-        public string Type { get; set; } = type;
-        public DropDownTemplateParameters DropDownTemplate { get; set; } = dropDownTemplate;
-        public FormValidationSettingParameters? ValidationSetting { get; set; } = validationSetting;
-        public string ModelType { get; set; } = modelType;
+        public string Field { get; } = field;
+        public string DomElementId { get; } = domElementId;
+        public string Title { get; } = title;
+        public string Placeholder { get; } = placeHolder;
+        public string Type { get; } = type;
+        public DropDownTemplateParameters DropDownTemplate { get; } = dropDownTemplate;
+        public FormValidationSettingParameters? ValidationSetting { get; } = validationSetting;
+        public string ModelType { get; } = modelType;
     }
 }

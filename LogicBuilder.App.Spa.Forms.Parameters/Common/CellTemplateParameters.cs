@@ -2,6 +2,6 @@
 {
     public class CellTemplateParameters(string templateName)
     {
-        public string TemplateName { get; set; } = templateName;
+        public string TemplateName { get; } = templateName;
     }
 }

@@ -14,7 +14,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         object value
     )
     {
-        public string Name { get; set; } = name;
-        public object Value { get; set; } = value;
+        public string Name { get; } = name;
+        public object Value { get; } = value;
     }
 }

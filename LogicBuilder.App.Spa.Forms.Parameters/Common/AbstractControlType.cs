@@ -2,7 +2,6 @@
 {
     public enum AbstractControlType
     {
-        FormControl,
         MultiSelectFormControl,
         FormGroup,
         FormGroupArray,

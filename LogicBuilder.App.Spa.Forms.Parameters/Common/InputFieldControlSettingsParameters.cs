@@ -40,13 +40,13 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 #pragma warning restore S107
     {
         public AbstractControlType AbstractControlType => AbstractControlType.InputFieldControl;
-        public string Field { get; set; } = field;
-        public string DomElementId { get; set; } = domElementId;
-        public string Title { get; set; } = title;
-        public string Placeholder { get; set; } = placeHolder;
-        public string Type { get; set; } = type;
-        public TextFieldTemplateParameters TextTemplate { get; set; } = textTemplate;
-        public string ModelType { get; set; } = modelType;
-        public FormValidationSettingParameters? ValidationSetting { get; set; } = validationSetting;
+        public string Field { get; } = field;
+        public string DomElementId { get; } = domElementId;
+        public string Title { get; } = title;
+        public string Placeholder { get; } = placeHolder;
+        public string Type { get; } = type;
+        public TextFieldTemplateParameters TextTemplate { get; } = textTemplate;
+        public string ModelType { get; } = modelType;
+        public FormValidationSettingParameters? ValidationSetting { get; } = validationSetting;
     }
 }

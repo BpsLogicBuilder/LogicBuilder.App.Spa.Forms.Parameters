@@ -15,8 +15,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         List<ConditionGroupParameters>? conditionGroups = null
     )
     {
-        public string Logic { get; set; } = logic;
-        public List<ConditionParameters>? Conditions { get; set; } = conditions;
-        public List<ConditionGroupParameters>? ConditionGroups { get; set; } = conditionGroups;
+        public string Logic { get; } = logic;
+        public List<ConditionParameters>? Conditions { get; } = conditions;
+        public List<ConditionGroupParameters>? ConditionGroups { get; } = conditionGroups;
     }
 }
