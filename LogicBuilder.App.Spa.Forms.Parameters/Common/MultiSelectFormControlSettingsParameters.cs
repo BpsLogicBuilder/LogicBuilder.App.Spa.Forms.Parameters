@@ -33,13 +33,13 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         [Comments("HTML template applicable to multi-select elements.")]
         MultiSelectTemplateParameters multiSelectTemplate,
 
-        [Comments("Defines the field's default value, validation functions (and arguments for the validator where necessary).")]
-        FormValidationSettingParameters? validationSetting = null,
-
         [ParameterEditorControl(ParameterControlType.ParameterSourceOnly)]
         [NameValue(AttributeNames.DEFAULTVALUE, "<myApp>.Domain.Entities.<EntityName>")]
-        [Comments("Fully qualified class name for the model type.")]
-        string? modelType = null
+        [Comments("Assembly qualified class name for the model type.")]
+        string modelType,
+
+        [Comments("Defines the field's default value, validation functions (and arguments for the validator where necessary).")]
+        FormValidationSettingParameters? validationSetting = null
     ) : IFormItemSettingParameters
 #pragma warning restore S107
     {
@@ -50,8 +50,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         public string Title { get; } = title;
         public string Placeholder { get; } = placeHolder;
         public string Type { get; } = type;
+        public string ModelType { get; } = modelType;
         public MultiSelectTemplateParameters MultiSelectTemplate { get; } = multiSelectTemplate;
         public FormValidationSettingParameters? ValidationSetting { get; } = validationSetting;
-        public string? ModelType { get; } = modelType;
     }
 }

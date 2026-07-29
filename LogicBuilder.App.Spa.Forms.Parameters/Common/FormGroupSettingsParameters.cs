@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 {
-#pragma warning disable S107 //Parameters used to configure a column with several optional settings
+#pragma warning disable S107 //Parameters used to configure a form group with several settings
     public class FormGroupSettingsParameters(
         [Comments("Update modelType first. Source property name from the target object.")]
         [ParameterEditorControl(ParameterControlType.ParameterSourcedPropertyInput)]

@@ -34,7 +34,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
 
         [ParameterEditorControl(ParameterControlType.ParameterSourceOnly)]
         [Comments("Fully qualified class name for the model type.")]
-        string modelType = "<myApp>.Domain.Entities.<EntityName>"
+        string? modelType = "<myApp>.Domain.Entities.<EntityName>"
     )
 #pragma warning restore S107
     {
@@ -45,6 +45,6 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Common
         public SelectorLambdaOperatorParameters TextAndValueSelector { get; } = textAndValueSelector;
         public RequestDetailsParameters RequestDetails { get; } = requestDetails;
         public string? ReloadItemsFlowName { get; } = reloadItemsFlowName;
-        public string ModelType { get; } = modelType;
+        public string? ModelType { get; } = modelType;
     }
 }

@@ -36,7 +36,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Tests.Common
                 title: "Courses",
                 placeHolder: "Select courses",
                 type: "text",
-                multiSelectTemplate: multiSelectTemplate
+                multiSelectTemplate: multiSelectTemplate,
+                modelType: typeof(string).AssemblyQualifiedName!
             );
 
             // Assert
@@ -48,8 +49,8 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Tests.Common
             Assert.Equal("Select courses", parameters.Placeholder);
             Assert.Equal("text", parameters.Type);
             Assert.Equal(multiSelectTemplate, parameters.MultiSelectTemplate);
+            Assert.Equal(typeof(string).AssemblyQualifiedName, parameters.ModelType);
             Assert.Null(parameters.ValidationSetting);
-            Assert.Null(parameters.ModelType);
         }
 
         [Fact]
