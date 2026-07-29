@@ -4,6 +4,7 @@
 [![CodeQL](https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.Forms.Parameters/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.Forms.Parameters/actions/workflows/github-code-scanning/codeql)
 [![codecov](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Spa.Forms.Parameters/graph/badge.svg?token=IQCZ1TKERD)](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Spa.Forms.Parameters)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=BpsLogicBuilder_LogicBuilder.App.Spa.Forms.Parameters&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=BpsLogicBuilder_LogicBuilder.App.Spa.Forms.Parameters)
+[![NuGet](https://img.shields.io/nuget/v/LogicBuilder.App.Spa.Forms.Parameters.svg)](https://www.nuget.org/packages/LogicBuilder.App.Spa.Forms.Parameters)
 
 ## Overview
 
