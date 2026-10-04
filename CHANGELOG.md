@@ -1,3 +1,4 @@
+* 2026-10-04 - AB#231: Try fetch tags in publish step.
 * 2026-10-04 - AB#231: Try Force PR version bump.
 * 2026-10-04 - AB#231: Add Title parameter to ChatFormSettings.
 * 2026-09-30 - AB#231: Package release notes.
