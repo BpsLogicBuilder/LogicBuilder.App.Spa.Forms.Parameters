@@ -20,6 +20,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Tests.Common
 
             // Act
             var parameters = new ChatFormSettingsParameters(
+                title: "Agent Chat Form",
                 agentConfigurationIdentifier: "knowledge-search-only",
                 chatHeight: 550,
                 chatWidth: 600,
@@ -27,6 +28,7 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Tests.Common
             );
 
             // Assert
+            Assert.Equal("Agent Chat Form", parameters.Title);
             Assert.Equal("knowledge-search-only", parameters.AgentConfigurationIdentifier);
             Assert.Equal(550, parameters.ChatHeight);
             Assert.Equal(600, parameters.ChatWidth);
@@ -37,9 +39,10 @@ namespace LogicBuilder.App.Spa.Forms.Parameters.Tests.Common
         public void Constructor_WithNullReferenceParameters_SetsPropertiesToNull()
         {
             // Arrange & Act
-            var parameters = new ChatFormSettingsParameters(null!, 0, 0, null!);
+            var parameters = new ChatFormSettingsParameters(null!, null!, 0, 0, null!);
 
             // Assert
+            Assert.Null(parameters.Title);
             Assert.Null(parameters.AgentConfigurationIdentifier);
             Assert.Equal(0, parameters.ChatHeight);
             Assert.Equal(0, parameters.ChatWidth);
