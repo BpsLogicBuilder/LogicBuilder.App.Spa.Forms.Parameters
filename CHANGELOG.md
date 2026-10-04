@@ -1,3 +1,4 @@
+* 2026-10-04 - AB#231: Try pulling the exact commit that triggered the PR.
 * 2026-10-04 - AB#231: Try git fetch --tags --force in publish job.
 * 2026-10-04 - AB#231: Try fetch-tags: true in publish job.
 * 2026-10-04 - AB#231: Try Force PR version bump.
