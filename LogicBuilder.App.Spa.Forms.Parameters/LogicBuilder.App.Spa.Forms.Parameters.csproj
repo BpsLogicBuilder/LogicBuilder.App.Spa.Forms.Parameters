@@ -13,7 +13,7 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<Description>The parameter classes in this library serve as a contract between the Logic Builder application and the .NET applications it defines. The parameters define the functionality of the forms including layout, controls utilized, their validation and their visibility.</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<PackageReleaseNotes>Making NuGet one of the release feeds.</PackageReleaseNotes>
+		<PackageReleaseNotes>Parameters classes for Agent chat hub and SignalR configurations.</PackageReleaseNotes>
 		<PackageTags>form configuration</PackageTags>
 		<Copyright>Copyright © BPS 2026</Copyright>
 		<RepositoryUrl>https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.Forms.Parameters</RepositoryUrl>
@@ -35,8 +35,8 @@
 
   <ItemGroup>
     <PackageReference Include="LogicBuilder.Forms.Parameters" Version="2.2.0" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.301" PrivateAssets="All" />
-		<PackageReference Include="MinVer" Version="7.0.0">
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
+		<PackageReference Include="MinVer" Version="8.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
